@@ -1,19 +1,10 @@
-from flask import Flask
-app = Flask(__name__)
+from flask import Flask, render_template
 
-@app.route("/")
-def homepage():
-    return """
-    <!DOCTYPE">
- <html>
-   <head>
-      <title> Indoor Air Quality</title>
-   </head>
-   <body>
-   <p>hi</p>
-   </body>
-</html>
-    """
+app = Flask('testapp')
+
+@app.route('/')
+def index():
+    return render_template('index.html', appdata='test')
 
 if __name__ == '__main__':
-    app.run(use_reloader=True, debug=True)
+    app.run()
