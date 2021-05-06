@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+    <meta http-equiv="refresh" content="5" >
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">   
+    <title>Indoor Air Quality</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.ico') }}">
+
+</head>
+    <body>
+        <h1>View Your Indoor Air Quality</h1><b>
+            <p>{{appdata}}</p>
+            <p>Your indoor air quality is deemed: {{airmine}}</p>
+            <p>Page auto refreshes every 5 seconds :)</p>
+    </body>
+</html>
