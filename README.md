@@ -8,4 +8,4 @@ datarecieve.py: This python file recives the data from the arduino via serial. F
 servermain.py: This is the setup for the flask server. This is where the web app comes from.</br></br>
 index.html and all files in 'static' and 'templates': link to the flask server. This is the html, css, js, and img files for our website. They are in this format as this is the structure that flask reads files.
 
-#WIP read me not fully updated
+# WIP read me not fully updated
